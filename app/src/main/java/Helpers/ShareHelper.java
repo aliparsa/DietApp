@@ -15,9 +15,9 @@ public class ShareHelper {
         shareBody+="\n\n";
         shareBody+=news.url;
         shareBody+="\n\n";
-        shareBody+="خبر خوان آسمان وب را دانلود نمایید";
+        shareBody+="جهت دانلود اپلیکیشن تغذیه و رژیم درمانه کلیک کنید";
         shareBody+="\n\n";
-        shareBody+="http://skydemo.ir/software.apk";
+        shareBody+="http://azizidiet.com/app.apk";
 
 
         Intent sendIntent = new Intent();
