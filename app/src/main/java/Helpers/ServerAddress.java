@@ -8,7 +8,8 @@ public class ServerAddress {
  //   public static String serverAddress = "http://irdevelopers.ir";
 
    // public static String skyFolder= serverAddress+"/sky/";
-    public static String funcFile="http://skyecommerce.ir/json.php";
+    public static String funcFile="http://azizidiet.com/hamid/json.php";
+    //public static String funcFile="http://skyecommerce.ir/json.php";
     //public static String funcFile=serverAddress+"/sky/func.php";
     public static String TejaratElectronicUrl="http://www.skyecommerce.ir/page/ecommerce.htm";
     public static String AmoozeshUrl="http://www.skyecommerce.ir/page/amuzesh.htm";
@@ -20,8 +21,8 @@ public class ServerAddress {
  //   public static String TamasBaMaUrl=serverAddress+"/sky/tamasbama.html";
     public static String DarbareMaUrl="http://www.skyecommerce.ir/page/about.htm";
 
-    public static String Slide1Url="http://www.skyecommerce.ir/page/slider1.jpg";
-    public static String Slide2Url="http://www.skyecommerce.ir/page/slider2.jpg";
-    public static String Slide3Url="http://www.skyecommerce.ir/page/slider3.jpg";
+    public static String Slide1Url="http://www.azizidiet.com/hamid/page/slider1.jpg";
+    public static String Slide2Url="http://www.azizidiet.com/hamid/page/slider2.jpg";
+    public static String Slide3Url="http://www.azizidiet.com/hamid/page/slider3.jpg";
 
 }

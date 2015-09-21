@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Web Sky</string>
+    <string name="app_name">Diet</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">تنظیمات</string>
     <string name="title_activity_simple_content_viewer">SimpleContentViewerActivity</string>
@@ -12,6 +12,6 @@
     <string name="title_activity_tamas_ba_ma">تماس با ما</string>
     <string name="title_activity_main_pages_web">MainPagesWebActivity</string>
     <string name="title_activity_all_news">همه اخبار</string>
-    <string name="MainActivity">Web Sky</string>
+    <string name="MainActivity">Diet</string>
 
 </resources>

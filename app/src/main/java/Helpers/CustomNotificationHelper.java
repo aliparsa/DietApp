@@ -18,8 +18,8 @@ import java.util.List;
 
 import Intefaces.CallBackAsync;
 import Utilities.Webservice;
-import irdevelopers.asemanweb2.MainActivity;
-import irdevelopers.asemanweb2.R;
+import irdevelopers.dietapp.MainActivity;
+import irdevelopers.dietapp.R;
 
 /**
  * Created by Alip on 8/16/2015.

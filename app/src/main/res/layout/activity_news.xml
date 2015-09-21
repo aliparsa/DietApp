@@ -6,7 +6,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="#fffafafa"
 
-    tools:context="irdevelopers.asemanweb2.NewsActivity">
+    tools:context="irdevelopers.dietapp.NewsActivity">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/activity_main_swipe_refresh_layout"

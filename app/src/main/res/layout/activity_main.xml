@@ -96,7 +96,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="7dp"
-                            android:text="خبر ها"
+                            android:text="مطالب مفید"
                             android:textSize="@dimen/main_menu_text_size" />
                     </LinearLayout>
 
@@ -115,14 +115,14 @@
                             android:layout_height="85dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/tejarat" />
+                            android:src="@drawable/sabtenam" />
 
                         <Views.TextViewFont
                             android:id="@+id/button2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="7dp"
-                            android:text="تجارت الکترونیک"
+                            android:text="درخواست رژیم"
                             android:textSize="@dimen/main_menu_text_size" />
                     </LinearLayout>
 
@@ -132,6 +132,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
+                        android:visibility="gone"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -146,7 +147,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="7dp"
-                            android:text="سوالات متداول"
+                            android:text="شاخص توده بدن"
                             android:textSize="@dimen/main_menu_text_size" />
                     </LinearLayout>
 
@@ -154,6 +155,7 @@
                 </TableRow>
 
                 <TableRow
+                    android:visibility="gone"
                     android:background="#FFF">
 
                     <LinearLayout
@@ -188,6 +190,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
+                        android:visibility="gone"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -240,6 +243,7 @@
                 </TableRow>
 
                 <TableRow
+                    android:visibility="gone"
                     android:background="#FFF">
 
                     <LinearLayout
@@ -273,7 +277,7 @@
                         android:id="@+id/menu_chera_asemanweb"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-
+android:visibility="gone"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:gravity="center"
@@ -404,6 +408,7 @@
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:visibility="gone"
                         android:orientation="vertical">
 
                         <ImageView

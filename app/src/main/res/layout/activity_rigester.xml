@@ -22,7 +22,7 @@
     android:orientation="vertical"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context="irdevelopers.asemanweb2.RigesterActivity">
+    tools:context="irdevelopers.dietapp.RigesterActivity">
 
 
 
@@ -47,7 +47,7 @@ android:layout_height="220dp">
     android:layout_height="240dp"
     android:id="@+id/imageView"
     android:scaleType="fitXY"
-    android:src="@drawable/rigester"
+    android:src="@drawable/diethedaer"
 
     />
 
@@ -113,7 +113,7 @@ android:layout_height="220dp">
 
     <Views.ButtonFont
         android:backgroundTint="#ffabacff"
-
+android:visibility="gone"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="انتخاب زمینه همکاری"
@@ -124,6 +124,13 @@ android:layout_height="220dp">
 
         android:layout_marginRight="10dp"
         android:id="@+id/buttonChoiseWork" />
+
+    <Views.TextViewFont
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="بعد از ارسال درخواست خود فرم اطلاعات به ایمیل شما ارسال می شود. آن را به صورت آنلاین تکمیل و ارسال فرمایید."
+        android:layout_margin="15dp" />
 
 
 </LinearLayout>

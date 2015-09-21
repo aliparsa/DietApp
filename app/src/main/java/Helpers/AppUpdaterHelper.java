@@ -24,7 +24,7 @@ import Intefaces.CallBackAsync;
 import Intefaces.CallBackDownload;
 import Intefaces.CallBackYes;
 import Utilities.Webservice;
-import irdevelopers.asemanweb2.R;
+import irdevelopers.dietapp.R;
 
 /**
  * Created by Alip on 8/16/2015.
