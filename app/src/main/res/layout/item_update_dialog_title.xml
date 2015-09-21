@@ -10,7 +10,7 @@
         android:layout_gravity="center"
         android:textColor="#fff"
         android:gravity="center"
-        android:background="#ff53b8ff"
+        android:background="#f19629"
         android:padding="10dp"
         android:textSize="20sp"/>
 

@@ -4,8 +4,8 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#f19629</item>
-        <item name="colorPrimaryDark">#7c0021ff</item>
-        <item name="colorAccent">#7d1641ff</item>
+        <item name="colorPrimaryDark">#f19629</item>
+        <item name="colorAccent">#f19629</item>
         <item name="android:statusBarColor">#f19629</item>
 
     </style>
