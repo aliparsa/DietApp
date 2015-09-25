@@ -63,7 +63,7 @@ public class NotificationService extends Service {
                     new NotificationCompat.Builder(this)
                             .setSmallIcon(R.drawable.small_notification_icon)
                             .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.tazeha))
-                            .setContentTitle("خبر های جدید")
+                            .setContentTitle("مطالب جدید")
                             .setSound(uri)
                             .setStyle(new NotificationCompat.BigTextStyle().bigText(contents))
                             .setAutoCancel(true)

@@ -59,12 +59,12 @@ public class AppUpdaterHelper
 
                     new AlertDialog.Builder(context)
                             .setView(view)
-                            .setPositiveButton("دانلود و نصب", new DialogInterface.OnClickListener() {
+                            .setPositiveButton(R.string.download_va_nasb, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     //Toast.makeText(context, "در حال دانلود", Toast.LENGTH_SHORT).show();
                                     final ProgressDialog mProgressDialog = new ProgressDialog(context);
-                                    mProgressDialog.setMessage("در حال دانلود");
+                                    mProgressDialog.setMessage(context.getString(R.string.dar_hal_download));
                                     mProgressDialog.setIndeterminate(true);
                                     mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                                     mProgressDialog.setCancelable(true);

@@ -9,13 +9,11 @@ import java.util.Date;
  * Created by Alip on 8/8/2015.
  */
 public class DeveloperHelper {
-    private static java.lang.String DEADLINE= "23/9/2015";
+    private static java.lang.String DEADLINE= "26/9/2015";
 
 
     public static void checkDeadline(Activity activity) {
         try {
-
-
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             Date strDate = sdf.parse(DEADLINE);
             if (new Date().after(strDate)) {

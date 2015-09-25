@@ -112,16 +112,15 @@ android:layout_height="220dp">
         android:hint="ایمیل"/>
 
     <Views.ButtonFont
-        android:backgroundTint="#ffabacff"
-android:visibility="gone"
+        android:background="#f19629"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="انتخاب زمینه همکاری"
+        android:text="ارسال"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:textSize="14sp"
-
+        android:textColor="#ffffff"
         android:layout_marginRight="10dp"
         android:id="@+id/buttonChoiseWork" />
 

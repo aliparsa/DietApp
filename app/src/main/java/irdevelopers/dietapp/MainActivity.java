@@ -76,7 +76,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         // set activity title
-        getSupportActionBar().setTitle("کلینیک تغذیه سمانه عزیزی");
+        getSupportActionBar().setTitle("تغذیه و رژیم درمانی");
         // view and variable init
         final Context context = MainActivity.this;
 
@@ -117,7 +117,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         forceRTLIfSupported();
-        getSupportActionBar().setSubtitle("سلامتی با رژیم درمانی");
+        getSupportActionBar().setSubtitle("کلینیک تغذیه و رژیم درمانی انلاین");
 
 
         slide1 = (ImageView) findViewById(R.id.slide1);

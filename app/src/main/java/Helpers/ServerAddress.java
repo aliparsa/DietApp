@@ -19,7 +19,7 @@ public class ServerAddress {
     //public static String WebsitehaUrl="http://www.skyecommerce.ir/page/website.htm";
     //public static String NarmafzarhaUrl="http://www.skyecommerce.ir/page/software.htm";
  //   public static String TamasBaMaUrl=serverAddress+"/sky/tamasbama.html";
-    public static String DarbareMaUrl="http://azizidiet.com/page/about.html";
+    public static String DarbareMaUrl="http://www.azizidiet.com/hamid/page/about.html";
 
     public static String Slide1Url="http://www.azizidiet.com/hamid/page/slider1.jpg";
     public static String Slide2Url="http://www.azizidiet.com/hamid/page/slider2.jpg";

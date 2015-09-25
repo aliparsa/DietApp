@@ -13,5 +13,7 @@
     <string name="title_activity_main_pages_web">MainPagesWebActivity</string>
     <string name="title_activity_all_news">همه اخبار</string>
     <string name="MainActivity">Diet</string>
+    <string name="download_va_nasb">دانلود و نصب</string>
+    <string name="dar_hal_download">در حال دانلود</string>
 
 </resources>

@@ -8,7 +8,7 @@ import java.io.File;
  * Created by Alip on 8/8/2015.
  */
 public class PathHelper {
-    public static String homePath= Environment.getExternalStorageDirectory().getPath()+"/AsemanWeb";
+    public static String homePath= Environment.getExternalStorageDirectory().getPath()+"/DietApp";
     public static String TejaratElectronicUrl=homePath+"/"+"tejaratelectronic.html";
     public static String AmoozeshUrl=homePath+"/"+"amoozesh.html";
     public static String TarahiWebUrl=homePath+"/"+"tarahiweb.html";
@@ -23,7 +23,7 @@ public class PathHelper {
     public static String Slide3Url=homePath+"/"+"slide3.jpg";
 
     public static void createHomeFolder() {
-        String folder_main = "AsemanWeb";
+        String folder_main = "DietApp";
         File f = new File(Environment.getExternalStorageDirectory(),
                 folder_main);
         if (!f.exists()) {
