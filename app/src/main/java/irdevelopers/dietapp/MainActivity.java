@@ -1,12 +1,14 @@
 package irdevelopers.dietapp;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -32,6 +34,7 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 
 import DataModel.News;
+import Helpers.ActionBarHelper;
 import Helpers.AppUpdaterHelper;
 import Helpers.DatabaseHelper;
 import Helpers.DeveloperHelper;
@@ -46,6 +49,7 @@ import Helpers.SharedPrefHelper;
 import Helpers.SliderHelper;
 import Helpers.SoalLoader;
 import Helpers.StatisticsHelper;
+import Intefaces.OnActionBarClickListener;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -76,9 +80,32 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         // set activity title
-        getSupportActionBar().setTitle(R.string.main_activity_title);
+        //getSupportActionBar().setTitle(R.string.main_activity_title);
         // view and variable init
         final Context context = MainActivity.this;
+
+        ActionBarHelper.setIconSettingActionbar(context, getSupportActionBar(),"کلینیک رژیم درمانی", new OnActionBarClickListener() {
+            @Override
+            public void onBackPressed() {
+            }
+
+            @Override
+            public void onReloadPressed() {
+
+            }
+
+            @Override
+            public void onSendPresses() {
+
+            }
+
+            @Override
+            public void onSettingPresses() {
+                Intent intent = new Intent(context, SettingsActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         // close the app is deadline reached
 //        DeveloperHelper.checkDeadline(this);
@@ -116,7 +143,7 @@ public class MainActivity extends ActionBarActivity {
         //start service
 
 
-        forceRTLIfSupported();
+        //forceRTLIfSupported();
         getSupportActionBar().setSubtitle(getString(R.string.main_activity_subtitle));
 
 
@@ -234,6 +261,7 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
+
 
 //        espanser.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -376,30 +404,30 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-
-            Intent intent = new Intent(context, SettingsActivity.class);
-            startActivity(intent);
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//
+//            Intent intent = new Intent(context, SettingsActivity.class);
+//            startActivity(intent);
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     private void forceRTLIfSupported() {
@@ -486,4 +514,6 @@ public class MainActivity extends ActionBarActivity {
         downloadMainPages();
         hideLoading();
     }
+
+
 }

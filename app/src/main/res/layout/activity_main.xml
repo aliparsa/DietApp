@@ -78,33 +78,7 @@
                     android:background="#FFF"
                     >
 
-                    <LinearLayout
-                        android:id="@+id/menu_tazeha"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        >
 
-
-                        <Views.CircularImageView
-                            app:shadow="true"
-                            app:border_width="1dp"
-                            android:layout_width="95dp"
-                            android:layout_height="95dp"
-
-                            android:src="@drawable/rejim" />
-
-                        <Views.TextViewFont
-                            android:id="@+id/button3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="7dp"
-                            android:text="مطالب مفید"
-                            android:textSize="@dimen/main_menu_text_size" />
-                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/menu_tejarat_electronic"
@@ -158,6 +132,33 @@
                             android:textSize="@dimen/main_menu_text_size" />
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/menu_tazeha"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+
+                        <Views.CircularImageView
+                            app:shadow="true"
+                            app:border_width="1dp"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+
+                            android:src="@drawable/rejim" />
+
+                        <Views.TextViewFont
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:text="مطالب مفید"
+                            android:textSize="@dimen/main_menu_text_size" />
+                    </LinearLayout>
 
                 </TableRow>
 
@@ -346,38 +347,7 @@ android:visibility="gone"
                 <TableRow
                     android:background="#FFF">
 
-                    <LinearLayout
-                        android:id="@+id/menu_darbareye_ma"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
 
-                        android:layout_margin="4dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <Views.CircularImageView
-                            app:shadow="true"
-                            app:border_width="1dp"
-                            android:id="@+id/imageView2"
-                            android:layout_width="95dp"
-                            android:layout_height="95dp"
-
-                            android:src="@drawable/darbarema" />
-
-                        <Views.TextViewFont
-                            android:id="@+id/button10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_centerHorizontal="true"
-                            android:layout_margin="7dp"
-                            android:layout_weight="0.3"
-
-                            android:drawablePadding="-15sp"
-                            android:text="درباره ما"
-                            android:textSize="@dimen/main_menu_text_size" />
-                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/menu_tamas_bama"
@@ -436,6 +406,39 @@ android:visibility="gone"
                             android:layout_weight="0.3"
                             android:drawablePadding="-15sp"
                             android:text="نرم افزار ها"
+                            android:textSize="@dimen/main_menu_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menu_darbareye_ma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Views.CircularImageView
+                            app:shadow="true"
+                            app:border_width="1dp"
+                            android:id="@+id/imageView2"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+
+                            android:src="@drawable/darbarema" />
+
+                        <Views.TextViewFont
+                            android:id="@+id/button10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="7dp"
+                            android:layout_weight="0.3"
+
+                            android:drawablePadding="-15sp"
+                            android:text="درباره ما"
                             android:textSize="@dimen/main_menu_text_size" />
                     </LinearLayout>
                 </TableRow>

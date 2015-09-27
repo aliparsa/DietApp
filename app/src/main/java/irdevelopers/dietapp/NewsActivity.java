@@ -1,6 +1,7 @@
 package irdevelopers.dietapp;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -23,11 +24,13 @@ import java.util.ArrayList;
 import Adapter.ListViewObjectAdapter;
 import DataModel.Group;
 import DataModel.News;
+import Helpers.ActionBarHelper;
 import Helpers.DatabaseHelper;
 import Helpers.NewsLoader;
 import Helpers.Ram;
 import Helpers.ShareHelper;
 import Intefaces.CallBackFinish;
+import Intefaces.OnActionBarClickListener;
 
 
 public class NewsActivity extends ActionBarActivity {
@@ -50,16 +53,39 @@ public class NewsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_news);
 
         try {
-            forceRTLIfSupported();
+            //forceRTLIfSupported();
             context = NewsActivity.this;
             group = Ram.group;
+
+
 
             if (group == null) {
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
             }
 
-            getSupportActionBar().setTitle(group.title);
+            ActionBarHelper.setBackActionbar(context, getSupportActionBar(), group.title, new OnActionBarClickListener() {
+                @Override
+                public void onBackPressed() {
+                    ((Activity) context).finish();
+                }
+
+                @Override
+                public void onReloadPressed() {
+
+                }
+
+                @Override
+                public void onSendPresses() {
+
+                }
+
+                @Override
+                public void onSettingPresses() {
+
+                }
+            });
+
             lv = (ListView) findViewById(R.id.mainNewsListView);
             footerprogressBar = (ProgressBar) findViewById(R.id.progressBar2);
             swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_main_swipe_refresh_layout);

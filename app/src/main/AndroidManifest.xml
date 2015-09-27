@@ -32,25 +32,21 @@
         <activity
             android:name="irdevelopers.dietapp.RigesterActivity"
             android:label="@string/title_activity_rigester"
-            android:parentActivityName="irdevelopers.dietapp.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="irdevelopers.dietapp.NewsActivity"
             android:label="@string/title_activity_news"
-            android:parentActivityName="irdevelopers.dietapp.NewsGroupPickerActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="irdevelopers.dietapp.NewsGroupPickerActivity"
             android:label="@string/title_activity_news"
-            android:parentActivityName="irdevelopers.dietapp.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="irdevelopers.dietapp.WebActivity"
             android:label="@string/title_activity_web"
-            android:parentActivityName="irdevelopers.dietapp.NewsActivity"
             android:screenOrientation="portrait" >
         </activity>
 
@@ -81,7 +77,6 @@
         <activity
             android:name="irdevelopers.dietapp.TamasBaMaActivity"
             android:label="@string/title_activity_tamas_ba_ma"
-            android:parentActivityName="irdevelopers.dietapp.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
@@ -92,10 +87,8 @@
         <activity
             android:name="irdevelopers.dietapp.AllNewsActivity"
             android:label="@string/title_activity_all_news"
-            android:parentActivityName="irdevelopers.dietapp.NewsGroupPickerActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="irdevelopers.dietapp.NewsGroupPickerActivity" />
+            >
+
         </activity>
     </application>
 

@@ -1,6 +1,7 @@
 package irdevelopers.dietapp;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -25,7 +26,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import Helpers.ActionBarHelper;
 import Intefaces.CallBackAsync;
+import Intefaces.OnActionBarClickListener;
 import Utilities.Webservice;
 
 
@@ -40,8 +43,29 @@ public class RigesterActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rigester);
         context = RigesterActivity.this;
-        forceRTLIfSupported();
-        getSupportActionBar().setTitle("صفحه اصلی");
+  //      forceRTLIfSupported();
+
+        ActionBarHelper.setBackActionbar(context, getSupportActionBar(), "صفحه اصلی", new OnActionBarClickListener() {
+            @Override
+            public void onBackPressed() {
+                ((Activity)context).finish();
+            }
+
+            @Override
+            public void onReloadPressed() {
+
+            }
+
+            @Override
+            public void onSendPresses() {
+
+            }
+
+            @Override
+            public void onSettingPresses() {
+
+            }
+        });
 
         // create and fill header
         ImageView headerImageView = (ImageView) findViewById(R.id.imageView);
