@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Diet</string>
+    <string name="app_name">رژیم درمانی</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">تنظیمات</string>
     <string name="title_activity_simple_content_viewer">SimpleContentViewerActivity</string>
@@ -12,8 +12,13 @@
     <string name="title_activity_tamas_ba_ma">تماس با ما</string>
     <string name="title_activity_main_pages_web">MainPagesWebActivity</string>
     <string name="title_activity_all_news">همه اخبار</string>
-    <string name="MainActivity">Diet</string>
+    <string name="MainActivity">رژیم درمانی</string>
     <string name="download_va_nasb">دانلود و نصب</string>
     <string name="dar_hal_download">در حال دانلود</string>
+    <string name="hameye_mataleb">همه مطالب</string>
+    <string name="main_activity_subtitle">کلینیک تغذیه و رژیم درمانی انلاین</string>
+    <string name="main_activity_title">رژیم درمانی</string>
+    <string name="toast_crash">خطایی رخ داد. اطلاعات این خطا جهت رفع به سرور ارسال میگردد</string>
+    <string name="payam_download_app">جهت دانلود اپلیکیشن تغذیه و رژیم درمانی کلیک کنید</string>
 
 </resources>

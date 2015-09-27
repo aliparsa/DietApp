@@ -8,6 +8,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -21,11 +23,13 @@ import Helpers.DownloadTaskHidden;
 import Helpers.PathHelper;
 import Helpers.Ram;
 import Helpers.ShareHelper;
+import Intefaces.OnReachEndListener;
+import Views.MyWebView;
 
 
 public class WebActivity extends ActionBarActivity {
 
-    WebView webView;
+    MyWebView webView;
     String offlinePath;
     String onlinePath;
     ProgressBar progressBar;
@@ -45,7 +49,11 @@ public class WebActivity extends ActionBarActivity {
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar3);
         sharebutton = (ImageView) findViewById(R.id.imageViewShare);
-        webView = (WebView) findViewById(R.id.webView);
+
+        webView = (MyWebView) findViewById(R.id.webView);
+
+
+
         webView.getSettings().setAppCachePath(getApplicationContext().getCacheDir().getAbsolutePath());
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setAllowFileAccess(true);
@@ -57,6 +65,9 @@ public class WebActivity extends ActionBarActivity {
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(false);
 
+       // sharebutton.setVisibility(View.GONE);
+
+
 
         if (Ram.news != null) {
             news = Ram.news;
@@ -64,7 +75,27 @@ public class WebActivity extends ActionBarActivity {
             onlinePath = news.url;
             offlinePath = PathHelper.homePath + "/" + news.uid + ".html";
             mode = "news";
-            sharebutton.setVisibility(View.VISIBLE);
+
+            webView.setOnReachEndListener(new OnReachEndListener() {
+                @Override
+                public void onReach() {
+                    if(sharebutton.getVisibility()==View.VISIBLE) return;
+                    Animation animation = AnimationUtils.loadAnimation(context, R.anim.abc_slide_in_bottom);
+                    sharebutton.startAnimation(animation);
+                    sharebutton.setVisibility(View.VISIBLE);
+
+
+                }
+
+                @Override
+                public void onGetAway() {
+                    if ( sharebutton.getVisibility()==View.GONE ) return;
+                    Animation animation = AnimationUtils.loadAnimation(context, R.anim.abc_slide_out_bottom);
+                    sharebutton.startAnimation(animation);
+                    sharebutton.setVisibility(View.GONE);
+
+                }
+            });
 
         } else {
             sharebutton.setVisibility(View.GONE);

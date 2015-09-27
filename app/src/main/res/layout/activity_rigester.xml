@@ -112,7 +112,7 @@ android:layout_height="220dp">
         android:hint="ایمیل"/>
 
     <Views.ButtonFont
-        android:background="#f19629"
+        android:background="@drawable/button_background"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="ارسال"

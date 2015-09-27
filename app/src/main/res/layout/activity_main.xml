@@ -147,7 +147,7 @@
                             android:layout_width="95dp"
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
-                            android:src="@drawable/soalatmotadavel" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/buttonQuestion"
@@ -161,7 +161,7 @@
 
                 </TableRow>
 
-                <TableRow
+                 <TableRow
                     android:visibility="gone"
                     android:background="#FFF">
 
@@ -179,7 +179,7 @@
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/sabtenam" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/buttonSabtNam"
@@ -206,7 +206,7 @@
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/tarahiweb" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/button5"
@@ -235,7 +235,7 @@
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/amuzesh" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/button4"
@@ -267,7 +267,7 @@
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/websiteha" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/button7"
@@ -295,7 +295,7 @@ android:visibility="gone"
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/cheraasemanweb" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/button8"
@@ -326,7 +326,7 @@ android:visibility="gone"
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/sponser" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/button9"
@@ -424,7 +424,7 @@ android:visibility="gone"
                             android:layout_height="95dp"
                             android:background="@android:drawable/dialog_holo_light_frame"
 
-                            android:src="@drawable/narmafzarha" />
+                            />
 
                         <Views.TextViewFont
                             android:id="@+id/button12"

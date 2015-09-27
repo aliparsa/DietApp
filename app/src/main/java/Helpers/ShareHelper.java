@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import DataModel.News;
+import irdevelopers.dietapp.R;
 
 /**
  * Created by Ali on 9/13/2015.
@@ -15,7 +16,7 @@ public class ShareHelper {
         shareBody+="\n\n";
         shareBody+=news.url;
         shareBody+="\n\n";
-        shareBody+="جهت دانلود اپلیکیشن تغذیه و رژیم درمانه کلیک کنید";
+        shareBody+=context.getString(R.string.payam_download_app);
         shareBody+="\n\n";
         shareBody+="http://azizidiet.com/app.apk";
 

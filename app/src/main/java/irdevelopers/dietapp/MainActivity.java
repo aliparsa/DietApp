@@ -76,12 +76,12 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         // set activity title
-        getSupportActionBar().setTitle("تغذیه و رژیم درمانی");
+        getSupportActionBar().setTitle(R.string.main_activity_title);
         // view and variable init
         final Context context = MainActivity.this;
 
         // close the app is deadline reached
-        DeveloperHelper.checkDeadline(this);
+//        DeveloperHelper.checkDeadline(this);
 
 //        try{
 //            int versionCode = context.getPackageManager()
@@ -117,7 +117,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         forceRTLIfSupported();
-        getSupportActionBar().setSubtitle("کلینیک تغذیه و رژیم درمانی انلاین");
+        getSupportActionBar().setSubtitle(getString(R.string.main_activity_subtitle));
 
 
         slide1 = (ImageView) findViewById(R.id.slide1);
@@ -144,25 +144,25 @@ public class MainActivity extends ActionBarActivity {
         StatisticsHelper.sendStatisticsToServer(context);
 
         // try to unistall old version
-        if(PackageInstalledCheker.isPackageInstalled("irdevelopers.asemanweb",context)){
-            // yes
-            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View header = inflater.inflate(R.layout.dialog_unistal_last_ver, null);
-            new AlertDialog.Builder(context)
-                    .setView(header)
-                    .setPositiveButton("حذف نسخه قبلی", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Uri packageUri = Uri.parse("package:irdevelopers.asemanweb");
-                            Intent uninstallIntent =
-                                    new Intent(Intent.ACTION_UNINSTALL_PACKAGE, packageUri);
-                            startActivity(uninstallIntent);
-
-                        }
-                    })
-
-                    .show();
-        }
+//        if(PackageInstalledCheker.isPackageInstalled("irdevelopers.asemanweb",context)){
+//            // yes
+//            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//            View header = inflater.inflate(R.layout.dialog_unistal_last_ver, null);
+//            new AlertDialog.Builder(context)
+//                    .setView(header)
+//                    .setPositiveButton("حذف نسخه قبلی", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            Uri packageUri = Uri.parse("package:irdevelopers.asemanweb");
+//                            Intent uninstallIntent =
+//                                    new Intent(Intent.ACTION_UNINSTALL_PACKAGE, packageUri);
+//                            startActivity(uninstallIntent);
+//
+//                        }
+//                    })
+//
+//                    .show();
+//        }
 
         downloadMainPages();
 

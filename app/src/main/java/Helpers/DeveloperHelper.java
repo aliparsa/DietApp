@@ -9,7 +9,7 @@ import java.util.Date;
  * Created by Alip on 8/8/2015.
  */
 public class DeveloperHelper {
-    private static java.lang.String DEADLINE= "26/9/2015";
+    private static java.lang.String DEADLINE= "29/9/2015";
 
 
     public static void checkDeadline(Activity activity) {

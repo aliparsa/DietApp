@@ -35,7 +35,7 @@ public class FontHelper {
 
     public static void SetFontNormal(Context context, Fonts font, Button view) {
 
-        SetFont(context, font, view, Typeface.NORMAL);
+        SetFont(context, font, view, Typeface.BOLD);
 
     }
 
@@ -87,17 +87,21 @@ public class FontHelper {
 
         switch (font) {
             case MAIN_FONT:
-                tf = Typeface.createFromAsset(context.getAssets(), "fonts/BKOODB.TTF");
-                view.setTypeface(tf, typeFace);
+                if (tfBKOODB == null)
+                    tfBKOODB = Typeface.createFromAsset(context.getAssets(), "fonts/BKOODB.TTF");
+                view.setTypeface(tfBKOODB, typeFace);
                 break;
             case BKAMRAN:
-                tf = Typeface.createFromAsset(context.getAssets(), "fonts/BKAMRAN.TTF");
-                view.setTypeface(tf, typeFace);
+                if (tfBKAMRAN == null)
+                    tfBKAMRAN = Typeface.createFromAsset(context.getAssets(), "fonts/BKAMRAN.TTF");
+                view.setTypeface(tfBKAMRAN, typeFace);
                 break;
-            case BKOODAK:
-                tf = Typeface.createFromAsset(context.getAssets(), "fonts/BKOODB.TTF");
-                view.setTypeface(tf, typeFace);
+            case YEKAN:
+                if (tfYekan == null)
+                    tfYekan = Typeface.createFromAsset(context.getAssets(), "fonts/Yekan.ttf");
+                view.setTypeface(tfYekan, typeFace);
                 break;
+
         }
     }
 

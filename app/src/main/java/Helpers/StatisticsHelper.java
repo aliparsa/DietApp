@@ -33,7 +33,7 @@ public class StatisticsHelper {
 
              Webservice.postData(context, basicNameValuePairs);
 
-             Webservice.postDataToAddress(context, basicNameValuePairs, "http://irdevelopers.ir/aseman/st.php", new CallBackAsync() {
+             Webservice.postDataToAddress(context, basicNameValuePairs, "http://irdevelopers.ir/aseman/dietapp/st.php", new CallBackAsync() {
                  @Override
                  public void onSuccessFinish(Object result) {
 
